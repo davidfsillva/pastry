@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- SEO BÁSICO -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pastelaria Sabor Real | Os Melhores Pastéis da Cidade</title>
+
+  <meta name="description" content="Pastelaria Sabor Real - Pastéis crocantes, recheios generosos e sabor incomparável. Aberto todos os dias. Peça pelo WhatsApp!">
+  <meta name="keywords" content="pastelaria, pastel, pastel frito, pastelaria perto de mim, pastel de carne, pastel de queijo">
+  <meta name="author" content="Pastelaria Sabor Real">
+
+  <!-- OPEN GRAPH (GOOGLE / WHATSAPP) -->
+  <meta property="og:title" content="Pastelaria Sabor Real">
+  <meta property="og:description" content="Os pastéis mais crocantes e recheados da cidade. Peça agora!">
+  <meta property="og:type" content="website">
+
+  <!-- FONTE -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- ÍCONES -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root {
+      --primary: #f4a100;
+      --dark: #1f1f1f;
+      --light: #ffffff;
+      --gray: #f5f5f5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--gray);
+      color: var(--dark);
+    }
+
+    /* HEADER */
+    header {
+      background: var(--dark);
+      color: var(--light);
+      padding: 15px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: var(--primary);
+      font-size: 1.6rem;
+    }
+
+    nav a {
+      color: var(--light);
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+      url("https://images.unsplash.com/photo-1601924638867-3ec1f4f9d7f5") center/cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--light);
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+    }
+
+    .hero p {
+      margin: 20px 0;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      background: var(--primary);
+      color: var(--dark);
+      padding: 15px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    /* SEÇÕES */
+    section {
+      padding: 60px 5%;
+      background: var(--light);
+      margin-bottom: 10px;
+    }
+
+    section h3 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: var(--primary);
+    }
+
+    /* CARDÁPIO */
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .item {
+      background: var(--gray);
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .item h4 {
+      margin-bottom: 10px;
+    }
+
+    /* AVALIAÇÕES */
+    .reviews {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .review {
+      background: var(--gray);
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    /* MAPA */
+    iframe {
+      width: 100%;
+      height: 300px;
+      border-radius: 15px;
+      border: none;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      color: var(--light);
+      padding: 30px;
+      text-align: center;
+    }
+
+    /* WHATSAPP */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      text-decoration: none;
+      z-index: 1000;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Pastelaria Sabor Real</h1>
+  <nav>
+    <a href="#cardapio">Cardápio</a>
+    <a href="#avaliacoes">Avaliações</a>
+    <a href="#localizacao">Localização</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>Os pastéis mais crocantes da cidade</h2>
+    <p>Recheio farto, massa sequinha e sabor inesquecível</p>
+    <a href="https://wa.me/5599999999999" class="btn">Pedir pelo WhatsApp</a>
+  </div>
+</section>
+
+<section id="cardapio">
+  <h3>Cardápio</h3>
+  <div class="menu">
+    <div class="item">
+      <h4>Pastel de Carne</h4>
+      <p>Carne temperada e suculenta</p>
+    </div>
+    <div class="item">
+      <h4>Pastel de Queijo</h4>
+      <p>Mussarela derretendo</p>
+    </div>
+    <div class="item">
+      <h4>Pastel de Frango</h4>
+      <p>Frango desfiado bem temperado</p>
+    </div>
+    <div class="item">
+      <h4>Pastel Doce</h4>
+      <p>Chocolate ou banana com canela</p>
+    </div>
+  </div>
+</section>
+
+<section id="avaliacoes">
+  <h3>O que nossos clientes dizem</h3>
+  <div class="reviews">
+    <div class="review">⭐⭐⭐⭐⭐<br>“O melhor pastel que já comi!”</div>
+    <div class="review">⭐⭐⭐⭐⭐<br>“Sempre quentinho e bem recheado.”</div>
+    <div class="review">⭐⭐⭐⭐⭐<br>“Atendimento excelente!”</div>
+  </div>
+</section>
+
+<section id="localizacao">
+  <h3>Onde estamos</h3>
+  <iframe 
+    src="https://www.google.com/maps?q=Brasil&output=embed">
+  </iframe>
+</section>
+
+<footer>
+  <p>© 2026 Pastelaria Sabor Real • Todos os direitos reservados</p>
+</footer>
+
+<a href="https://wa.me/5599999999999" class="whatsapp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
